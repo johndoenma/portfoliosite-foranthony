@@ -1,0 +1,164 @@
+/* SITE STRUCTURE */
+
+.site-header {
+    position: absolute; //This lifts the header allowing the hero to go underneath it
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    .site-id {
+        // display: flex; //This places text next to logo
+        align-items: center;
+        // position: absolute;
+        z-index: 13;
+    }
+
+    .logo {
+        max-width: 60px;
+        margin-right: 0.5em;
+    }
+}
+
+/* SITE-FOOTER */
+.site-footer {
+    background-color: black;
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+section {
+    padding: 2em 0 2em 0;
+    // min-height: 100vh;
+    display: grid;
+    align-items: center;
+
+    .surfriders-section {
+        padding: 4em 0 2em 0;
+    }
+}
+
+/* HERO SECTION */
+.hero {
+    background: black;
+    // text-align: center;
+    padding: 2em 0;
+    color: white;
+    min-height: 101vh; //This increases the height of the hero
+    display: grid;
+    place-items: center; //These vertically center items/text in the hero
+
+    .container {
+        // width: 100%; //This overrides the container
+    }
+
+    h1 {
+        margin-bottom: 0.25em;
+        color: white;
+        max-width: 900px;
+        // display: flex;
+    }
+    p {
+        margin: 1em auto;
+    }
+}
+
+/* PROJECT HERO SECTION */
+.project-hero {
+    // text-align: center;
+    padding: 0;
+    // min-height: 100vh; //This increases the height of the hero
+    // display: grid;
+    // place-items: center; //These vertically center items/text in the hero
+    .project-content {
+        max-width: 1000px;
+        // margin: -300px auto 300px auto;
+        position: relative;
+        top: -350px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 $gutter;
+    }
+    .project-hero-img {
+        text-align: right;
+        img {
+            width: 80%;
+            // margin-right: 0;
+            // margin-left: auto;
+            // display: block;
+        }
+    }
+    .container {
+        // width: 100%; //This overrides the container
+    }
+
+    h1 {
+        margin-bottom: 0.25em;
+        color: white;
+        max-width: 900px;
+        // display: flex;
+    }
+    // p {
+    //     margin: 1em auto;
+    // }
+}
+
+/* PROJECT PAGE SECTION */
+.project-section {
+    background: white;
+    // text-align: center;
+    padding: 2em 0;
+    color: white;
+    min-height: 100vh; //This increases the height of the hero
+    display: grid;
+    place-items: center; //These vertically center items/text in the hero
+
+    .container {
+        // width: 100%; //This overrides the container
+    }
+
+    h1 {
+        margin-bottom: 0.25em;
+        color: black;
+        max-width: 900px;
+        // display: flex;
+    }
+    p {
+        margin: 1em auto;
+        color: black;
+    }
+}
+
+/* FULL-WIDTH HELPER */
+
+.full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    display: grid;
+    place-items: center;
+}
+
+.full-width img {
+    width: 80%;
+}

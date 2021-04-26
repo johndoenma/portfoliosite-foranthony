@@ -1,0 +1,64 @@
+.hover-block {
+    position: relative;
+    overflow: hidden;
+    img {
+        display: block;
+    }
+    .hover-content {
+        display: block;
+        transform: translate(0, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        transition: all 0.4s ease-out;
+
+        .project-meta {
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            span {
+                display: inline-block;
+                background: black;
+                color: white;
+                padding: 0 .7em .1em .7em;
+                border-radius: 0 0 5px 5px;
+            }
+        }
+
+        &.to-right .project-meta {
+            transform: translate(-100%, 0);
+        }
+
+        &.to-left .project-meta {
+            transform: translate(100%, 0);
+        }
+
+    }
+
+    &:hover {
+        .hover-content {
+            &.from-bottom {
+                transform: translate(0, 100%);
+            }
+            &.from-right,
+            &.to-right {
+                transform: translate(100%, 0);
+            }
+            &.from-left,
+            &.to-left {
+                transform: translate(-100%, 0);
+            }
+            .project-meta { 
+                top: 0;
+                transition: all 0.4s ease .2s;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,232 @@
+/* RESET BODY */
+body {
+    margin: 0;
+    // overflow-x: hidden;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 0 5em;
+}
+
+/* ABOUT CONTAINER */
+.about-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 5em;
+    .about-body {
+        color: $color-text-body;
+        background-color: white;
+        margin: 0;
+        padding: 3em;
+        max-width: 80%;
+    }
+    .about-name {
+        z-index: 15;
+        h1 {
+            font-size: 6em;
+        }
+        h1 span {
+            font-size: 2em;
+            color: $color-accent;
+            margin-bottom: 0;
+            display: block;
+        }
+        h2 {
+            font-size: 1.25em;
+            max-width: 10em;
+            color: white;
+            font-family: "oswald";
+        }
+        a {
+            color: $color-accent;
+            font-size: 2.75em;
+            font-family: "oswald";
+        }
+    }
+    .about-img {
+        img {
+            width: 100%;
+        }
+    }
+    @media (min-width: 768px) {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+
+        .child1 {
+            grid-column: 6 / span 3;
+            grid-row: 3 / span 3;
+            z-index: 5;
+        }
+
+        .child2 {
+            grid-column: 3 / span 3;
+            grid-row: 2 / span 3;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .child3 {
+            grid-column: 3 / span 6;
+            grid-row: 6 / span 3;
+            z-index: 4;
+        }
+
+        .child4 {
+            grid-column: 7 / span 6;
+            grid-row: 1 / span 8;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+/* PROJECTS CONTAINER */
+
+.project-container {
+    max-width: 100%;
+    // max-width: calc(100% - ($gridgap * 2));
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    .project-body {
+        color: white;
+        background-color: grey;
+        margin: 0;
+        padding: 3em;
+        max-width: 80%;
+    }
+    .project-name {
+        padding: $gutter * 2;
+        max-width: 30em;
+        h1 {
+            font-size: 6em;
+            margin: 0;
+            color: black;
+        }
+        h1 span {
+            font-size: 2em;
+            color: $color-accent;
+            margin-bottom: 0;
+            display: block;
+        }
+        h2 {
+            font-size: 4em;
+            max-width: none;
+            color: black;
+            margin: 0;
+            font-family: poiret-one, sans-serif;
+        }
+        h3 {
+            font-size: 1.5em;
+            max-width: none;
+            color: rgb(101, 101, 101);
+            margin: 0 0 1.5em 0;
+            font-family: poiret-one, sans-serif;
+        }
+        a {
+            color: $color-accent;
+            font-size: 2.75em;
+            font-family: "oswald";
+        }
+        p {
+            max-width: none;
+        }
+        h2,
+        p {
+            width: 100%;
+        }
+    }
+    .swapped .project-name {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    // @media (min-width: 768px) {
+    //     width: 100%;
+    //     height: 100%;
+    //     display: grid;
+    //     grid-template-columns: repeat(16, 1fr);
+    //     grid-template-rows: repeat(12, 1fr);
+
+    //     .child1 {
+    //         grid-column: 4 / span 16;
+    //         grid-row: 1 / span 4;
+    //         z-index: 4;
+    //     }
+
+    //     .child2 {
+    //         grid-column: 5 / span 2;
+    //         grid-row: 3 / span 1;
+    //         z-index: 5;
+    //     }
+
+    //     .child3 {
+    //         grid-column: 5 / span 10;
+    //         grid-row: 4 / span 3;
+    //         z-index: 5;
+    //     }
+
+    //     .child4 {
+    //         grid-column: 1 / span 8;
+    //         grid-row: 5 / span 2;
+    //         z-index: 5;
+    //     }
+
+    //     .child5 {
+    //         grid-column: 10 / span 4;
+    //         grid-row: 6 / span 2;
+    //     }
+
+    //     .child6 {
+    //         grid-column: 9 / span 3;
+    //         grid-row: 7 / span 3;
+    //     }
+
+    //     .child7 {
+    //         grid-column: 4 / span 3;
+    //         grid-row: 7 / span 3;
+    //     }
+
+    //     .child8 {
+    //         grid-column: 1 / span 16;
+    //         grid-row: 8 / span 3;
+    //     }
+
+    //     .child9 {
+    //         grid-column: 6 / span 10;
+    //         grid-row: 11 / span 2;
+    //     }
+    // }
+}
+
+/* SURFRIDERS */
+#demobox {
+    background-color: #041e1b;
+    padding: 3em;
+}
+
+/* MEDIA QUERIES */
+
+/* RESPONSIVE TYPOGRAPHY */
+//SMALL
+body {
+    font-size: 87.5%;
+}
+
+@media (min-width: $breakpoint-small) {
+    body {
+        font-size: 100%;
+    }
+}
+
+@media (min-width: $breakpoint-large) {
+    body {
+        font-size: 112.5%;
+    }
+}

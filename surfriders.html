@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>My Portfolio</title>
+    <meta name="description" content="A minimal, simple portfolio site." />
+
+    <!-- VIEWPORT FOR MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FOR IE -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- MAIN CSS FILE -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- ADOBE FONTS -->
+    <link rel="stylesheet" href="https://use.typekit.net/ode5myy.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=source+sans
+            +pro:ital,wght@0,400;0,700;1,400;1,700&family=source+serif+
+            pro&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="site-id">
+            <div class="logo">
+                <a href="index.html"><img src="img/personal_logo_black.png" alt="Test Logo"></a>
+            </div>
+            <!-- <h1 class="hide-visually"><a href="index.html">Personal Framework</a></h1> -->
+        </div>
+
+        <nav class="site-nav" data-navstate="close">
+            <div class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="panels">
+                <div class="panel panel1">
+                    <img src="img/overlay-pic.jpg" alt="Anthony Diep">
+                    <ul>
+                        <li>Anthony Diep</li>
+                        <li>Honolulu | Hawaii</li>
+                        <li>Instagram</li>
+                        <li>Linkedin</li>
+                    </ul>
+                </div>
+                <div class="panel panel2">
+                    <div class="panel2child">
+                        <ul class="overlaymenu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#projects">Projects</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="site-main">
+
+        <section id="projects">
+            <div class="surfriders-container">
+                <div class="surfriders-center-type">
+                    <h1>HAWAII<span>SURFRIDERS</span></h1>
+                    <div class="surfriders-img">
+                        <img src="img/surfrider-partial-logo.png" alt="Test Logo">
+                    </div>
+                    <p><span>Branding | Packaging | Website</span></p>
+                </div>
+                <div class="surfriders-center-type">
+                    <h3>theBRAND</h3>
+                    <p>The Hawaii Surfriders is a fictional professional basketball team affiliated
+                        with the National Basketball Association.</p>
+                    <h3>theGOAL</h3>
+                    <p>For this student identity project, my focus was to create a system that can
+                        both presents the characteristics of the team and develop a connection with
+                        its fans.</p>
+                </div>
+                <div class="surfriders-center-type">
+                    <p><span>Medium: Illustrator | Photoshop | XD</span></p>
+                </div>
+                <div class="full-width">
+                    <img src="img/lebron.png" alt="Test Logo">
+                </div>
+                <div id="demobox">
+                    <div class="surfriders-center-type">
+                        <h2><span>- BRAND STRATEGY -</span></h2>
+                    </div>
+                </div>
+                <div class="surfriders-center-type">
+                    <h2>- LOGO -</h2>
+                </div>
+                <div class="surfriders-center-type">
+                    <h2>- ADDITIONAL ASSETS -</h2>
+                </div>
+                <div class="surfriders-center-type">
+                    <h2>- WEBSITE -</h2>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="full-width">
+                <img src="img/surfriders_casestudy.png" alt="placeholder" class="scale-with-grid" />
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <nav class="site-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- SMOOTH SCROLL BY CHRIS FERDINANDI -->
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 800,
+            speedAsDuration: true
+        });
+    </script>
+
+    <!-- Main JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

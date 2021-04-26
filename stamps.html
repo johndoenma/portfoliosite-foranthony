@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>My Portfolio</title>
+    <meta name="description" content="A minimal, simple portfolio site." />
+
+    <!-- VIEWPORT FOR MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FOR IE -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- MAIN CSS FILE -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=source+sans
+            +pro:ital,wght@0,400;0,700;1,400;1,700&family=source+serif+
+            pro&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="site-header" data-navstate="closed">
+        <div class="site-id">
+            <div class="logo">
+                <a href="index.html"><img src="img/personal_logo_black.png" alt="Test Logo"></a>
+            </div>
+            <!-- <h1 class="hide-visually"><a href="index.html">Personal Framework</a></h1> -->
+        </div>
+
+        <nav class="site-nav" data-navstate="close">
+            <div class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="panels">
+                <div class="panel panel1">
+                    <img src="img/overlay-pic.jpg" alt="Anthony Diep">
+                    <ul>
+                        <li>Anthony Diep</li>
+                        <li>Honolulu | Hawaii</li>
+                        <li>Instagram</li>
+                        <li>Linkedin</li>
+                    </ul>
+                </div>
+                <div class="panel panel2">
+                    <div class="panel2child">
+                        <ul class="overlaymenu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#projects">Projects</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="site-main">
+
+        <!-- <section class="hero full-width">
+            <img src="img/placeholder-1x1-art1.jpg" alt="placeholder" class="scale-with-grid" />
+        </section> -->
+
+        <img src="img/stamp-hero.jpg" alt="placeholder" class="scale-with-grid" />
+
+        <section>
+            <div class="container">
+                <!-- <h3 class="subheader">Redesign and Original</h3> -->
+                <h3 class="subheadline">
+                    <p>Stationary Design</p>
+                </h3>
+                <div class="row">
+                    <p>
+                        <strong>Client:</strong> (Student Project)
+                        <br />
+                        <strong>Service:</strong> Postage Design
+                        <br />
+                        <strong>Skills:</strong> Illustrator
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Section01" class="animate-on-scroll">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="one-half">
+                        <img src="img/stamp01.jpg" alt="Placeholder">
+                    </div>
+                    <div class="one-half">
+                        <h3>Concept</h3>
+                        <p>Case Study Houses were architectural projects that ran duirng
+                            the mid-90s as a mean to design affordable homes for the
+                            sudden boom in demand with soldiers returning from World
+                            War II. The idea of the design was to generate colorful schemes
+                            that reflects the era and the seemingly simple but complex
+                            design of the architectures.</p>
+                        <a href="#" class="button">Button</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Section02" class="animate-on-scroll">
+            <div class="container">
+
+                <div class="row swapped">
+                    <div class="one-half">
+                        <img src="img/stamp02.jpg" alt="Placeholder">
+                    </div>
+                    <div class="one-half">
+                        <h3>Goals</h3>
+                        <p>Emphasize the uniqueness of each house in a clear
+                            manner that is eye-catching even on the size of a
+                            stamp.</p>
+                        <a href="#" class="button">Button</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Section03" class="animate-on-scroll">
+            <div class="container">
+
+                <div class="row stacked">
+                    <div class="one-half animate-scale-in">
+                        <img src="img/stamp03.png" alt="Placeholder">
+                    </div>
+                    <div class="one-half animate-slide-up">
+                        <h3>Result</h3>
+                        <p>Vibrant colored stamps with a retro tone. The Case
+                            Study Houses are illustrated to focus on the structural pieces that can identify each
+                            specific house.</p>
+                        <a href="#" class="button">Button</a>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <nav class="site-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- SMOOTH SCROLL BY CHRIS FERDINANDI -->
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 800,
+            speedAsDuration: true
+        });
+    </script>
+
+    <!-- Main JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

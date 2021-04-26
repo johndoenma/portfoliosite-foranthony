@@ -1,0 +1,188 @@
+/* BASE TEXT COLORS */
+body {
+    color: $color-text-body;
+}
+
+/* HEADINGS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $color-text-headings;
+}
+
+/* BASE TEXT FONTS */
+body {
+    font-family: $font-family-sans;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-serif;
+}
+
+/* BASE TYPOGRAPHY */
+body {
+    font-size: 100%;
+    line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0 0 0.5em 0;
+}
+
+/* TYPOGRAPHIC SCALES*/
+h1 {
+    font-size: 3em;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2.25em;
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 2em;
+    line-height: 1.2;
+    font-family: "oswald";
+}
+
+/* LIMIT NUMBER OF CHARACTERS PER LINE */
+p {
+    max-width: 40em;
+}
+
+/* LINKS */
+a {
+    color: $color-link;
+    text-decoration: none;
+    &:hover {
+        color: $color-link-darker;
+        text-decoration: none;
+    }
+}
+
+/* HORIZONTAL LINE */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 3em 0;
+}
+
+/* TYPE SPECIMEN */
+.headline {
+    font-size: 4em;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    color: $color-text-headings;
+    font-family: "oswald";
+}
+
+.subheadline {
+    font-weight: normal;
+    font-size: 2.5em;
+    line-height: 1.1;
+    color: $color-lightgrey;
+    margin: 0.25em 0;
+    font-family: "oswald";
+}
+
+/* SECTION HEADING */
+.section-heading {
+    font-size: 1em;
+    font-family: $font-family-sans;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 3em 0 3em 0;
+}
+
+/* PROJECT PAGE TYPE */
+.projects-content {
+    margin: auto;
+    max-width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.projects-content-title {
+    font-size: 5em;
+    font-size: clamp(1em, 5vw, 5em);
+    font-family: "oswald";
+}
+
+.surfriders-container {
+    max-width: 45%;
+    margin: 0 auto;
+    padding: 0 5em;
+
+    .surfriders-body {
+        color: $color-text-body;
+        padding: 3em;
+        max-width: 80%;
+    }
+    .surfriders-center-type {
+        h1 {
+            font-size: 6em;
+            line-height: 0.8;
+            font-family: "abel";
+            display: grid;
+            place-items: center;
+            margin-bottom: 0.15em;
+        }
+        h1 span {
+            font-family: "badaboom-pro", impact, sans-serif;
+        }
+        h2 {
+            color: $color-text-body;
+            display: grid;
+            place-items: center;
+        }
+        h2 span {
+            color: white;
+        }
+        h3 {
+            font-size: 2.25em;
+            max-width: 10em;
+            font-family: "oswald";
+            margin: 0;
+        }
+        a {
+            color: $color-accent;
+            font-size: 2.75em;
+            font-family: "oswald";
+        }
+        p {
+            color: $color-text-body;
+            margin-bottom: 2em;
+        }
+        p span {
+            display: grid;
+            place-items: center;
+            color: grey;
+            margin-bottom: 2em;
+        }
+    }
+    .surfriders-img {
+        display: grid;
+        place-items: center;
+        margin-bottom: 1em;
+    }
+}
